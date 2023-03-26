@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+</head>
+<body>
+<pre>
+        <form action="saveLocation" method="POST">
+            Id : <input type="text" name="id"/>
+            Code: <input type="text" name="code"/>
+            Name: <input type="text" name="name"/>
+            Type: <input type="radio" name="type" value="urban"/> Rural <input type="radio" name="type" value="rural"/> Urban
+
+            <input type="submit" value="save"/>
+        </form>
+    <b th:text="${msg}"></b>
+    <a href="displayLocation">Display all</a>
+    </pre>
+</body>
+</html>
